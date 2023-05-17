@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;600;800;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="main-width">
+            <header>
+                <div class="logo">
+                    <a href="#"><img src="img/vetorial.png" class="img"></a>
+                </div>
+                <nav>
+                    <div class="hamb">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="/feliz.html">Início</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="https://www.google.com.br/">Serviços</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li class="btn"><a href="">Downloads</a></li>
+
+                    </ul>
+
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-text">
+                    <h3>Aqui você encontra</h3>
+                    <h1> <span class="input"></span></h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas libero eligendi in debitis et
+                        ut eveniet? Repellat, optio numquam. Pariatur nesciunt, est labore impedit odit libero
+                        cupiditate assumenda enim iste.</p>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <div class="social">
+
+                    <a href=""><i class="fa-brands fa-android"></i></a>
+
+
+
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+
+
+                    <a href=""><i class="fa-brands fa-square-steam"></i></a>
+
+
+                    <a href=""><i class="fa-brands fa-twitch"></i></a>
+
+
+                    <a href=""><i class="fa-brands fa-steam"></i></a>
+
+                </div>
+                <button>Aplicativos</button>
+                <div class="button">
+                    <p>&#169 2023 WPprojetos - Todos direitos reservados</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <script type="tex/javascript" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".input", {
+            strings: ["Aplicativos", "Jogos", "Programas", "Sites"],
+            typeSpeed: 40,
+            backSpeed: 1,
+            loop: true
+        });
+
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml13');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [100, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i
+            }).add({
+                targets: '.ml13 .letter',
+                translateY: [0, -100],
+                opacity: [1, 0],
+                easing: "easeInExpo",
+                duration: 1200,
+                delay: (el, i) => 100 + 30 * i
+            });
+    </script>
+
+
+</body>
+
+</html>
